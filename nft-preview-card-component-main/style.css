@@ -46,6 +46,17 @@ body {
 .main-photo {
   border-radius: 10px;
   max-width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.main-photo::after {
+  content: "";
+  position: absolute;
+  color: aliceblue;
+  background-image: url(images/icon-view.svg);
+  z-index: 2;
+  border: 2px solid lime;
 }
 
 .title {
@@ -111,4 +122,9 @@ body {
 .attribution > a {
   text-decoration: none;
   color: var(--cl-white);
+}
+
+.title:hover,
+.author-name:hover {
+  color: var(--cl-primary-cyan);
 }
