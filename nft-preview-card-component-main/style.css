@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap");
+
+:root {
+  --cl-primary-soft-blue: hsl(215, 51%, 70%);
+  --cl-primary-cyan: hsl(178, 100%, 50%);
+  --cl-neutral-main-bg: hsl(217, 54%, 11%);
+  --cl-neutral-card-bg: hsl(216, 50%, 16%);
+  --cl-neutral-line: hsl(215, 32%, 27%);
+  --cl-white: hsl(0, 0%, 100%);
+  --attrib-link: hsl(228, 45%, 44%);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--cl-neutral-main-bg);
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  position: absolute;
+  background-color: var(--cl-neutral-card-bg);
+  max-width: 85%;
+  width: 30rem;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 1.2em;
+}
+
+.main-photo {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.title {
+  color: var(--cl-white);
+  font-size: 2rem;
+  padding: 1em 0;
+}
+
+.description {
+  color: var(--cl-primary-soft-blue);
+  padding-bottom: 1em;
+  line-height: 1.5;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--cl-neutral-line);
+}
+
+.rating {
+  display: flex;
+  color: var(--cl-primary-cyan);
+  gap: 0.3em;
+  font-weight: 500;
+}
+
+.date-time {
+  display: flex;
+  gap: 0.3em;
+  color: var(--cl-primary-soft-blue);
+}
+
+.profile {
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  color: var(--cl-primary-soft-blue);
+  font-size: 1.4rem;
+}
+
+.author-name {
+  color: var(--cl-white);
+}
+
+.profile-img {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.attribution {
+  margin-top: 5em;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1em;
+  color: var(--attrib-link);
+}
+
+.attribution > a {
+  text-decoration: none;
+  color: var(--cl-white);
+}
