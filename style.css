@@ -50,15 +50,6 @@ body {
   position: relative;
 }
 
-.main-photo::after {
-  content: "";
-  position: absolute;
-  color: aliceblue;
-  background-image: url(images/icon-view.svg);
-  z-index: 2;
-  border: 2px solid lime;
-}
-
 .title {
   color: var(--cl-white);
   font-size: 2rem;
